@@ -1,0 +1,17 @@
+{
+  "name": "NpmTest",
+  "version": "0.0.0",
+  "description": "Learning all about NPM",
+  "devDependencies": {
+    "browserify": "~2.35.2",
+    "watchify": "~0.1.0"
+  },
+  "scripts": {
+    "build-js": "browserify build\\js\\hello.js > public\\js\\bundle.js",
+    "watch-js": "watchify build\\js\\hello.js -o public\\js\\bundle.js -dv",
+    "build-sass": "bundle exec compass compile --time",
+    "watch-sass": "bundle exec compass watch --time",
+    "watch": "npm run watch-js & npm run watch-css",
+    "test": "echo 1"
+  }
+}
