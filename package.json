@@ -8,8 +8,8 @@
     "watchify": "^2.1.1"
   },
   "scripts": {
-    "build-js": "browserify build\\js\\hello.js > public\\js\\bundle.js",
-    "watch-js": "watchify build\\js\\hello.js -o public\\js\\bundle.js -dv",
+    "build-js": "browserify build/js/hello.js > public/js/bundle.js",
+    "watch-js": "watchify build/js/hello.js -o public/js/bundle.js -dv",
     "build-sass": "node-sass build/sass/main.scss build/sass/main.css",
     "watch-sass": "sass-watch build/sass output/css",
     "watch": "start \"watch-js\" npm run watch-js & start \"watch-css\" npm run watch-css",
