@@ -4,7 +4,7 @@
   "description": "Learning all about NPM",
   "devDependencies": {
     "browserify": "~2.35.2",
-    "watchify": "~0.1.0"
+    "watchify": "^2.1.1"
   },
   "scripts": {
     "build-js": "browserify build\\js\\hello.js > public\\js\\bundle.js",
