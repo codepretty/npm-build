@@ -1,3 +1,4 @@
 # git ignore file
 *.sass-cache/*
 *node_modules/*
+npm-debug.log
