@@ -4,13 +4,14 @@
   "description": "Learning all about NPM",
   "devDependencies": {
     "browserify": "~2.35.2",
+    "node-sass": "^1.2.2",
     "watchify": "^2.1.1"
   },
   "scripts": {
     "build-js": "browserify build\\js\\hello.js > public\\js\\bundle.js",
     "watch-js": "watchify build\\js\\hello.js -o public\\js\\bundle.js -dv",
-    "build-sass": "bundle exec compass compile --time",
-    "watch-sass": "bundle exec compass watch --time",
+    "build-sass": "node-sass build/sass/main.scss build/sass/main.css",
+    "watch-sass": "sass-watch build/sass output/css",
     "watch": "start \"watch-js\" npm run watch-js & start \"watch-css\" npm run watch-css",
     "test": "echo 1"
   }
